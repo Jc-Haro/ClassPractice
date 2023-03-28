@@ -6,21 +6,25 @@
 
 int main(){
 
+    bool runApp=true;
+
     char option{};
 
-    std::cout<<"Welcome to Jc practices\n";
-    std::cout<<"Choose a practice:\n";
-    std::cout<<"1-GuessMyNumber\n";
-    std::cout<<"2-";
-    std::cin>>option;
+    do{
+        std::cout<<"Welcome to Jc practices\n";
+        std::cout<<"Choose a practice:\n";
+        std::cout<<"1-GuessMyNumber\n";
+        std::cout<<"2-";
+        std::cin>>option;
 
-    switch (option){
-    case '1': practice1Main();  
-        break;
-    case '2': practice2Main();  
-        break;
-    default:
-        break;
-    }
+        switch (option){
+        case '1': practice1Main();  
+            break;
+        case '2': practice2Main();  
+            break;
+        default: std::cout<<"That option is not available yet";
+            break;
+        }
+    } while (runApp);
     return 0;
 }
