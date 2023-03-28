@@ -1,6 +1,8 @@
 #include<iostream>
 #include<ios>
 #include<iomanip>
+#include"./practice1.h"
+#include"./practice2.h"
 
 int main(){
 
@@ -13,9 +15,10 @@ int main(){
     std::cin>>option;
 
     switch (option){
-    case '1': 
+    case '1': practice1Main();  
         break;
-    
+    case '2': practice2Main();  
+        break;
     default:
         break;
     }
