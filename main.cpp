@@ -14,7 +14,7 @@ int main(){
         std::cout<<"Welcome to Jc practices\n";
         std::cout<<"Choose a practice:\n";
         std::cout<<"1-GuessMyNumber\n";
-        std::cout<<"2-";
+        std::cout<<"2-Vector inventory\n";
         std::cin>>option;
 
         switch (option){
