@@ -3,11 +3,20 @@
 
 void CheckInventory(std::vector<std::string> inventory);
 void FillInventory(std::vector<std::string> &inventory);
+void InventoryPractice();
+void VectorSizeCapacity();
+
 
 const int INVENTORYSIZE = 5; 
 
 
 void practice2Main(){
+
+
+
+}
+
+void InventoryPractice(){
 
     //Ways to daclare a vector
     //std::vector<std::string> myInventory = {"long_Sword", "great_Hammer", "ice_Bomb"};
@@ -34,8 +43,6 @@ void practice2Main(){
     CheckInventory(inventory);
 
 }
-
-
 void CheckInventory(std::vector<std::string> inventory){
      if(inventory.empty()){
         std::cout<<"Your inventory is empty"<<std::endl;
@@ -47,9 +54,6 @@ void CheckInventory(std::vector<std::string> inventory){
             }    
     }
 }
-
-
-
 void FillInventory(std::vector<std::string> &inventory){
     
     std::cout<<"You can have up to 5 items\n";
@@ -64,9 +68,10 @@ void FillInventory(std::vector<std::string> &inventory){
             std::cin>> numberOfItemsToAdd;
         }while (numberOfItemsToAdd>maxItemsToAdd);
 
-        std::string newItem{};
+        
 
         for(int i = 0; i < numberOfItemsToAdd; i++){
+            std::string newItem{};
             std::cout<<"Type the item to add to your inventory in slot "<< i+1<<": ";
             std::getline(std::cin, newItem);
             inventory.push_back(newItem); 
@@ -77,4 +82,15 @@ void FillInventory(std::vector<std::string> &inventory){
     else{
         std::cout<<"Your inventory is full\n";
     }
+}
+
+void VectorSizeCapacity(){
+        std::vector<std::string>scores(10,0);
+    std::cout<<"Vector size is: " << scores.size()<<std::endl;
+    std::cout<<"Vector capacity is: "<<scores.capacity();
+    scores.push_back(0);
+    scores.push_back(0);
+    std::cout<<"Vector size is: " << scores.size()<<std::endl;
+    std::cout<<"Vector capacity is: "<<scores.capacity();
+
 }

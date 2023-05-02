@@ -13,14 +13,17 @@ int main(){
     do{
         std::cout<<"Welcome to Jc practices\n";
         std::cout<<"Choose a practice:\n";
-        std::cout<<"1-GuessMyNumber\n";
-        std::cout<<"2-Vector inventory\n";
+        std::cout<<"1-Exit\n";  
+        std::cout<<"2-GuessMyNumber\n";
+        std::cout<<"3-Vector inventory\n";
         std::cin>>option;
 
         switch (option){
-        case '1': practice1Main();  
+        case '1': runApp = false;  
             break;
-        case '2': practice2Main();  
+        case '2': practice1Main();  
+            break;
+        case '3': practice2Main();  
             break;
         default: std::cout<<"That option is not available yet";
             break;
