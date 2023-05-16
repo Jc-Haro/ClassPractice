@@ -168,4 +168,31 @@ void IterationPractice(){
     std::random_shuffle(word.begin(), word.end());
     std::cout<<"Shuffled word "<<word<<std::endl;
 
+
+/*
+//SIZE
+    cout << "\n El nombre del item " << *myIterator << "tiene ";
+    cout << (*myIterator).size() << " letras";
+
+    cout << "\n El nombre del item " << *myIterator << "tiene ";
+    cout << (myIterator)->size() << " letras";
+
+    //INSERT
+    cout << "\n\nRecuperaste la bomba robada ";
+    inventory.insert(inventory.begin() + 2, "bomba");
+    cout << "\nTus Items: \n";
+    for (iter = inventory.begin(); iter != inventory.end(); iter++)
+    {
+        cout << *iter << endl;
+    }
+
+    //DELETE
+    cout << "\nTu " << inventory[1] << " fue destruido en batalla.";
+    inventory.erase(inventory.begin() + 1);
+    cout << "\nTus Items: \n";
+    for (iter = inventory.begin(); iter != inventory.end(); iter++)
+    {
+        cout << *iter << endl;
+    }
+    */
 }
