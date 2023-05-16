@@ -1,9 +1,12 @@
 #include<iostream>
 #include<vector>
+#include<string>
+
 
 void swipeInt(int &num1, int &adnum2);
 int getScore();
 void printScore(int num1, int num2);
+void displayInventory(const std::vector<std::string>& myInventory);
 
 void practice3Main(){
     int score1 = getScore();
@@ -14,11 +17,25 @@ void practice3Main(){
     printScore(score1, score2);
     std::cout<<&score1<<std::endl;
     std::cout<<&score2<<std::endl;
-    
+
+    std::vector<std::string> inventory;
+    inventory.push_back("sword");
+    inventory.push_back("shield");
+    displayInventory(inventory);
 
 
 
 }
+
+void displayInventory(const std::vector<std::string>& myInventory){
+    std::cout<<"Your inventory is: "<<std::endl;
+
+    for (std::vector<std::string>::const_iterator i = myInventory.begin(); i != myInventory.end(); i++){
+        std::cout<< *i <<std::endl;
+    }
+    
+}
+
 
 
 
