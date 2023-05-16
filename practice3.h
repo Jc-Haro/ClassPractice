@@ -12,6 +12,10 @@ void practice3Main(){
     swipeInt(score1,score2);
     std::cout<<"New scores"<<std::endl;
     printScore(score1, score2);
+    std::cout<<&score1<<std::endl;
+    std::cout<<&score2<<std::endl;
+    
+
 
 
 }
