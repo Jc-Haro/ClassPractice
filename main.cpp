@@ -3,6 +3,8 @@
 #include<iomanip>
 #include"./practice1.h"
 #include"./practice2.h"
+#include"practice3.h"
+
 
 int main(){
 
@@ -13,9 +15,10 @@ int main(){
     do{
         std::cout<<"Welcome to Jc practices\n";
         std::cout<<"Choose a practice:\n";
-        std::cout<<"1-Exit\n";  
-        std::cout<<"2-GuessMyNumber\n";
-        std::cout<<"3-Vector inventory\n";
+        std::cout<<"1.-Exit\n";  
+        std::cout<<"2.-GuessMyNumber\n";
+        std::cout<<"3.-Vector inventory\n";
+        std::cout<<"4.-Score swap\n";
         std::cin>>option;
 
         switch (option){
@@ -25,6 +28,8 @@ int main(){
             break;
         case '3': practice2Main();  
             break;
+        case '4': practice3Main();
+            break; 
         default: std::cout<<"That option is not available yet";
             break;
         }
