@@ -1,8 +1,5 @@
 #include<iostream>
 
-
-
-
 void printBox(int rows, int columns);
 void printDiagonal(int rows, int columns);
 int getPositiveNumber(std::string type);
@@ -38,7 +35,7 @@ void printDiagonal(int rows, int columns){
 
       for(int i = 0; i < rows; i++){
         for(int j = 0; j < columns; j++){
-            if(i==0 || i == columns-1 || j == 0 || j == rows-1  || i==j || columns-i-1==j){
+            if(i==0 || i == columns-1 || j == 0 || j == rows-1  || i==j || i+j==columns){
                 std::cout<<" 1 ";
             }
             else{
