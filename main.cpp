@@ -5,6 +5,7 @@
 #include"./practice2.h"
 #include"practice3.h"
 #include"./practice4.h"
+#include"./practice5.h"
 
 
 int main(){
@@ -21,6 +22,7 @@ int main(){
         std::cout<<"3.-Vector inventory\n";
         std::cout<<"4.-Score swap\n";
         std::cout<<"5.-Matrix\n";
+        std::cout<<"6.-Inventory 2\n";
         std::cin>>option;
 
         switch (option){
@@ -34,6 +36,8 @@ int main(){
             break; 
         case '5': practice4Main();
             break; 
+        case '6': practice5main();
+            break;
         default: std::cout<<"That option is not available yet";
             break;
         }
